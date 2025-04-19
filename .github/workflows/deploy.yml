@@ -36,4 +36,8 @@ jobs:
           
       - name: Deploy to GitHub Pages
         id: deployment
+<<<<<<< HEAD
         uses: actions/deploy-pages@v2
+=======
+        uses: actions/deploy-pages@v2
+>>>>>>> 300af56de1ef83fe1ae98e8930ed2efc81fbcc05
