@@ -1,0 +1,89 @@
+/* Main background gradient */
+.gradient-bg {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Primary button style */
+  .btn-primary {
+    background-color: #00B900; /* LINE green color */
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #009900;
+    transform: translateY(-2px);
+  }
+  
+  /* Risk level indicators */
+  .risk-high {
+    background-color: #FECACA;
+    border-left: 6px solid #EF4444;
+  }
+  
+  .risk-medium {
+    background-color: #FEF3C7;
+    border-left: 6px solid #F59E0B;
+  }
+  
+  .risk-low {
+    background-color: #D1FAE5;
+    border-left: 6px solid #10B981;
+  }
+  
+  /* Loading spinner animation */
+  .loading {
+    border-top-color: #3498db;
+    animation: spinner 1.5s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Custom select dropdown style */
+  select.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+  }
+  
+  /* Debug panel (only shown in development mode) */
+  .debug-panel {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    max-width: 300px;
+    max-height: 200px;
+    overflow: auto;
+    z-index: 1000;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .card {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .btn-primary {
+      width: 100%;
+    }
+  }
