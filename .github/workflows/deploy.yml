@@ -24,16 +24,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./src
-          destination: ./_site
-      
-      - name: Upload artifact
+      - name: Upload site
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./_site
+          path: ./src
       
       - name: Deploy to GitHub Pages
         id: deployment
