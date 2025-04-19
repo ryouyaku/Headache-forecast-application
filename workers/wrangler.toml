@@ -1,0 +1,30 @@
+name = "headache-forecast"
+main = "index.js"
+compatibility_date = "2023-06-01"
+
+# Configure environment variables
+# The OpenWeatherMap API key should be added as a secret
+# using 'wrangler secret put WEATHER_API_KEY'
+
+[vars]
+# You can add development variables here
+ENVIRONMENT = "production"
+
+# Configure routes
+[triggers]
+crons = [ ]
+
+# Use the latest JS optimization
+[build]
+command = ""
+
+# Define KV namespace (optional for caching)
+# [kv_namespaces]
+# [[kv_namespaces]]
+# binding = "WEATHER_CACHE"
+# id = "your-kv-namespace-id"
+
+[env.staging]
+name = "headache-forecast-staging"
+[env.staging.vars]
+ENVIRONMENT = "staging"
