@@ -7,7 +7,7 @@
 const DEBUG_MODE = false;
 
 // API endpoint for the Cloudflare Worker
-const API_ENDPOINT = 'https://headache-forecast.your-username.workers.dev';
+const API_ENDPOINT = 'https://headache-forecast.ryou12181018.workers.dev';
 
 /**
  * Debug logging function - only logs when debug mode is enabled
